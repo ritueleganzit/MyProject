@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+   >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_imag1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="595dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="550dp"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/trans_rect1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tv4_login"/>
+
+                <TextView
+                    android:id="@+id/tv1_uname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="Username*"
+                    android:drawableRight="@drawable/ic_person_black_24dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv1_uname"
+                    android:background="@drawable/rect2"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/ed1_uname"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed1_uname"
+                    android:layout_marginTop="20dp"
+                    android:text="Email*"
+                    android:drawableRight="@drawable/ic_email_black_24dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv_email"
+                    android:background="@drawable/rect2"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/ed_email"
+                    android:inputType="textEmailAddress"/>
+
+
+
+                <TextView
+                    android:id="@+id/tv_pass1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_email"
+                    android:layout_marginTop="20dp"
+                    android:text="Password*"
+                    android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv_pass1"
+                    android:background="@drawable/rect2"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/ed_pass1"
+                    android:inputType="textPassword"/>
+
+                <TextView
+                    android:id="@+id/tv_pass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ed_pass1"
+                    android:layout_marginTop="20dp"
+                    android:text="Confirm Password*"
+                    android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv_pass2"
+                    android:background="@drawable/rect2"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/ed_pass2"
+                    android:inputType="textPassword"/>
+
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3_forgot"
+                android:layout_centerHorizontal="true"
+                android:text="Sign Up"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@color/pink"
+                android:layout_marginTop="595dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button"
+                android:id="@+id/signup"/>
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>
